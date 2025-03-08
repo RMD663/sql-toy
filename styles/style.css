@@ -1,0 +1,148 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #d4ff00;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #00ff00;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 1rem;
+    color: #a9ff6d;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+textarea.error {
+    border: 2px solid #ff4444;
+}
+
+.button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.terminal {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border: 2px solid #00ff00;
+    color: #d4ff00;
+    font-size: 1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #d4ff00;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #00ff00;
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table td {
+    background-color: #2b2b2b;
+}
+
+.highlight-error {
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.suggestion, .error-message {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.query-output {
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
+
